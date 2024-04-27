@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ekaterina Sinitsyna | portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@1..1000&display=swap" rel="stylesheet">
+</head>
+<style>
+	*,
+	*::after,
+	*::before {
+		padding: 0;
+		margin: 0;
+	}
+
+	body {
+		background-color: #f8f6f3;
+		font-family: "Ysabeau Infant", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 200;
+		font-style: normal;
+		color: #292929;
+		padding: 20px;
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-weight: 120;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 20px auto;
+		padding: 20px 0;
+		border-top: 2px solid #292929;
+	}
+
+	.header {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 40px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #292929;
+	}
+
+	.header__photo {
+		width: 100%;
+		max-width: 400px;
+		height: auto;
+	}
+
+	.header__text {
+		text-align: end;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header__text svg {
+		height: 1.1em;
+		width: auto;
+		color: #292929;
+	}
+
+	.header__text-title {
+		font-size: 3rem;
+		margin: 0;
+		line-height: 120%;
+		margin-bottom: 10px;
+	}
+
+	.header__text-desc {
+		font-size: 1.5rem;
+	}
+
+	.header__text span {
+		display: flex;
+		align-items: end;
+		gap: 5px;
+		justify-content: end;
+	}
+
+	.header__text-contacts {
+		margin-top: auto;
+	}
+
+	.main {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		border-bottom: 2px solid #292929;
+	}
+
+	.main__skills {
+		padding-right: 20px;
+		border-right: 1px solid #292929;
+	}
+
+	.main__skills>div:first-child {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+
+	.main__skills-list {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.main__skill {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.main__skill-scale {
+		display: block;
+		width: 120px;
+		height: 0.6em;
+		border: 1px solid #29292963;
+		padding: 2px;
+	}
+
+	.main__skill-scale>span {
+		display: block;
+		height: 100%;
+		width: 0;
+		opacity: 0;
+		background-color: #292929ba;
+		transition: all 0.7s linear;
+	}
+
+	.main__projects {
+		margin-top: 10px;
+		padding-left: 20px;
+	}
+
+	.main__projects-list {
+		padding-left: 15px;
+	}
+
+	.main__projects-list li {
+		margin-bottom: 1em;
+	}
+
+	.main__projects-list li>div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media (max-width: 680px) {
+		.header {
+			grid-template-columns: 100%;
+			justify-items: center;
+		}
+
+		.header__photo {
+			aspect-ratio: 2/1.2;
+			object-fit: cover;
+			max-width: 100%;
+			object-position: center 33%;
+		}
+
+		.main {
+			grid-template-columns: 100%;
+		}
+
+		.main__skills {
+			margin-bottom: 30px;
+		}
+
+		.main__skills,
+		.main__projects {
+			padding: 0;
+			border: none;
+		}
+	}
+
+	@media (max-width: 400px) {
+		.header__text-title {
+			font-size: 2rem;
+		}
+	}
+</style>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<img class="header__photo" src="img/bw-02_20240407213728.jpg" alt="">
+			<div class="header__text">
+				<h1 class="header__text-title">Екатерина Синицына</h1>
+				<div class="header__text-desc">Junior FrontEnd-developer</div>
+				<div class="header__text-contacts">
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 48 48" data-name="Layer 2">
+							<path d="M6.47 10.71a2 2 0 0 0-2 2h0v22.61a2 2 0 0 0 2 2h35.06a2 2 0 0 0 2-2h0V12.68a2 2 0 0 0-2-2H6.47zm33.21 3.82L24 26.07 8.32 14.53" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round" />
+						</svg>
+						<a href="mailto:sinitsina.ekaterina93@gmail.com" target="_blank">sinitsina.ekaterina93@gmail.com</a>
+					</span>
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 48 48" data-name="Layer 2">
+							<path d="M40.83 8.48c1.14 0 2 1 1.54 2.86l-5.58 26.3c-.39 1.87-1.52 2.32-3.08 1.45L20.4 29.26a.4.4 0 0 1 0-.65l15.37-13.88c.7-.62-.15-.92-1.07-.36L15.41 26.54a.46.46 0 0 1-.4.05L6.82 24C5 23.47 5 22.22 7.23 21.33L40 8.69a2.16 2.16 0 0 1 .83-.21z" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round" />
+						</svg>
+						<a href="https://t.me/katya_sinica" target="_blank">@katya_sinica</a>
+					</span>
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+						</svg>
+						<a href="https://github.com/ekaterina-si" target="_blank">ekaterina-si</a>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="main__skills">
+				<div>
+					<h2>Навыки</h2>
+					<ul class="main__skills-list">
+						<li class="main__skill">
+							<span>HTML5</span>
+							<span class="main__skill-scale">
+								<span data-value="90"></span>
+							</span>
+						</li>
+						<li class="main__skill">
+							<span>CSS3</span>
+							<span class="main__skill-scale">
+								<span data-value="90"></span>
+							</span>
+						</li>
+						<li class="main__skill">
+							<span>SCSS</span>
+							<span class="main__skill-scale">
+								<span data-value="90"></span>
+							</span>
+						</li>
+						<li class="main__skill">
+							<span>JavaScript</span>
+							<span class="main__skill-scale">
+								<span data-value="60"></span>
+							</span>
+						</li>
+						<li class="main__skill">
+							<span>PHP</span>
+							<span class="main__skill-scale">
+								<span data-value="20"></span>
+							</span>
+						</li>
+						<li class="main__skill">
+							<span>Wordpress</span>
+							<span class="main__skill-scale">
+								<span data-value="40"></span>
+							</span>
+						</li>
+						<li class="main__skill">
+							<span>Git</span>
+							<span class="main__skill-scale">
+								<span data-value="50"></span>
+							</span>
+						</li>
+						<li class="main__skill">
+							<span>Vue3</span>
+							<span class="main__skill-scale">
+								<span data-value="10"></span>
+							</span>
+						</li>
+						<li class="main__skill">
+							<span>Svelte</span>
+							<span class="main__skill-scale">
+								<span data-value="15"></span>
+							</span>
+						</li>
+						<li class="main__skill">
+							<span>Figma</span>
+							<span class="main__skill-scale">
+								<span data-value="95"></span>
+							</span>
+						</li>
+						<li class="main__skill">
+							<span>Photoshop</span>
+							<span class="main__skill-scale">
+								<span data-value="90"></span>
+							</span>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<h2>Образование</h2>
+					<p>2009 - 2014 Саратовское художественное училище им. А.П.Боголюбова</p>
+					<p>Специальность: Художник-Скульптор-Преподаватель</p>
+				</div>
+			</div>
+			<div class="main__projects">
+				<div>
+					<h2>ВЫПОЛНЕННЫЕ ПРОЕКТЫ</h2>
+					<ul class="main__projects-list">
+						<li>
+							<div>
+								<span>Верстка сайта (НЬЮРОУД)</span>
+								<a href="https://ekaterina-si.github.io/new-road/asphalting.html" target="_blank">https://ekaterina-si.github.io/new-road/asphalting.html</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>Верстка сайта (скорая)</span>
+								<a href="https://ekaterina-si.github.io/pulsem/" target="_blank">https://ekaterina-si.github.io/pulsem/</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>Виджет для приема донатов</span>
+								<a href="https://github.com/Apirone/donation-widget/" target="_blank">https://github.com/Apirone/donation-widget/</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>Верстка сайта LMT Group</span>
+								<a href="https://lmt-grupp.ru/" target="_blank">https://lmt-grupp.ru/</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>Верстка сайта LMT Group</span>
+								<a href="https://lmt-grupp.ru/" target="_blank">https://lmt-grupp.ru/</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>Верстка сайта стоматологии</span>
+								<a href="https://www.bokoystom.ru/" target="_blank">https://www.bokoystom.ru/</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span>Верстка сайта фотостудии автопортрета</span>
+								<a href="https://selfies.am/" target="_blank">https://selfies.am/</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+
+		const scales = document.querySelectorAll('.main__skill-scale');
+
+		scales.forEach(scale => {
+			const valElem = scale.querySelector('span');
+			valElem.style.width = valElem.getAttribute('data-value') + '%';
+			valElem.style.opacity = valElem.getAttribute('data-value') / 100;
+		})
+
+	});
+</script>
+
+</html>
